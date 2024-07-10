@@ -1,51 +1,70 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(20, 173, 219);
-    background-size: cover;
-    height: 100vh;
+    background-color: #285c6b62;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    height: 100vh;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-.container {
-    background-color: rgba(64, 73, 112, 0.8);
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+.card-container {
+    border-radius: 8px;
+    box-shadow: 0 10px 35px rgb(17, 215, 241);
+    max-width: 250px;
     width: 100%;
-    max-width: 600px;
-    margin: 20px;
+    margin: 20px; /* Added margin to ensure the card doesn't touch the edges */
 }
 
-.crossed {
-    text-decoration: line-through;
-    background-color: #dcdcdc;
+
+.card {
+    border-radius: 8px;
 }
 
-img {
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     width: 100%;
     height: auto;
-    border-radius: 30px;
+    margin-top: 10px; 
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-    .input-group {
-        flex-direction: column;
-    }
-    .input-group-append {
-        margin-top: 10px;
-    }
+
+.card-body {
+    padding: 10px; 
+    font-size: 0.9rem; 
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 800px;
-    }
+
+.card-title {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+}
+
+
+.input-group {
+    margin-bottom: 10px; 
+}
+
+
+.list-group-item {
+    cursor: pointer;
+    font-size: 0.9rem; 
+    padding: 5px 10px; 
+}
+
+
+li.crossed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+
+.btn {
+    font-size: 0.9rem; 
 }

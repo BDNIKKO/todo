@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <img src="images/todo_background.jpg" alt="To Do Checklist" class="img-fluid">
+    <div class="card-container">
         <div class="card">
-            <div class="card-body">
-                <h1 class="card-title text-center">To-Do List</h1>
+            <img src="images/todo_background.jpg" alt="To Do Checklist" class="img-fluid">
+            <div class="card-body text-center">
+                <h1 class="card-title">To-Do List</h1>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="new-todo" placeholder="Enter a new to-do">
+                    <input type="text" id="new-todo" class="form-control" placeholder="Enter a new to-do">
                     <div class="input-group-append">
-                        <button class="btn btn-success" id="add-todo">Add To-Do</button>
+                        <button id="add-todo" class="btn btn-success">Add</button>
                     </div>
                 </div>
-                <ul class="list-group" id="todo-list"></ul>
+                <ul id="todo-list" class="list-group list-group-flush"></ul>
             </div>
         </div>
     </div>
@@ -28,3 +28,4 @@
     <script src="todo.js"></script>
 </body>
 </html>
+
