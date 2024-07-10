@@ -1,4 +1,4 @@
-// Add an event listener to the document that fires when the DOM content is fully loaded
+
 document.addEventListener('DOMContentLoaded', () => {
     const input = document.getElementById('new-todo');
     const addButton = document.getElementById('add-todo');
