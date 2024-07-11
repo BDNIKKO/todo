@@ -13,9 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         li.addEventListener('click', () => {
             li.classList.add('crossed');
             setTimeout(() => {
-                li.remove();
-                saveTodos();
-            }, 1000);
+                li.classList.add('fading');
+                setTimeout(() => {
+                    li.remove();
+                    saveTodos();
+                }, 1000); // Duration of the fade-out transition
+            }, 1000); // Initial delay before starting fade-out
         });
         todoList.appendChild(li);
         input.value = '';
@@ -39,9 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
             li.addEventListener('click', () => {
                 li.classList.add('crossed');
                 setTimeout(() => {
-                    li.remove();
-                    saveTodos();
-                }, 1000);
+                    li.classList.add('fading');
+                    setTimeout(() => {
+                        li.remove();
+                        saveTodos();
+                    }, 1000); // Duration of the fade-out transition
+                }, 1000); // Initial delay before starting fade-out
             });
             todoList.appendChild(li);
         });
