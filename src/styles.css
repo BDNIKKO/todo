@@ -70,9 +70,10 @@ li.fading {
 }
 
 .btn {
-    font-size: 1.0rem;
+    font-size: 1rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    padding: 4px 12px;
 }
 
 #add-todo {
@@ -88,81 +89,79 @@ li.fading {
     border-radius: 7px;
 }
 
-/* Media queries for responsive design */
 
-/* Small screens (phones, small tablets) */
 @media (max-width: 576px) {
     .card-container {
-        max-width: 88%; /* Increased by 10% */
-        margin: 9px; /* Adjust margin for small screens */
+        max-width: 88%; 
+        margin: 9px; 
     }
 
     .card-body {
-        font-size: 1.056rem; /* Increased by 10% */
+        font-size: 1.056rem; 
     }
 
     .card-title {
-        font-size: 1.1rem; /* Increased by 10% */
+        font-size: 1.1rem; 
     }
 
     .list-group-item {
-        font-size: 0.792rem; /* Increased by 10% */
+        font-size: 0.792rem; 
     }
 }
 
-/* Medium screens (tablets, small desktops) */
+
 @media (min-width: 576px) and (max-width: 768px) {
     .card-container {
-        max-width: 79.2%; /* Increased by 10% */
+        max-width: 79.2%; 
     }
 
     .card-body {
-        font-size: 1.056rem; /* Increased by 10% */
+        font-size: 1.056rem; 
     }
 
     .card-title {
-        font-size: 1.232rem; /* Increased by 10% */
+        font-size: 1.232rem; 
     }
 
     .list-group-item {
-        font-size: 0.88rem; /* Increased by 10% */
+        font-size: 0.88rem; 
     }
 }
 
-/* Large screens (desktops) */
+
 @media (min-width: 768px) and (max-width: 992px) {
     .card-container {
-        max-width: 70.4%; /* Increased by 10% */
+        max-width: 70.4%; /
     }
 
     .card-body {
-        font-size: 1.232rem; /* Increased by 10% */
+        font-size: 1.232rem; 
     }
 
     .card-title {
-        font-size: 1.408rem; /* Increased by 10% */
+        font-size: 1.408rem; 
     }
 
     .list-group-item {
-        font-size: 1.056rem; /* Increased by 10% */
+        font-size: 1.056rem; 
     }
 }
 
-/* Extra large screens (large desktops) */
+
 @media (min-width: 992px) {
     .card-container {
-        max-width: 528px; /* Increased by 10% */
+        max-width: 528px; 
     }
 
     .card-body {
-        font-size: 1.408rem; /* Increased by 10% */
+        font-size: 1.408rem; 
     }
 
     .card-title {
-        font-size: 1.584rem; /* Increased by 10% */
+        font-size: 1.584rem; 
     }
 
     .list-group-item {
-        font-size: 1.232rem; /* Increased by 10% */
+        font-size: 1.232rem; 
     }
 }
